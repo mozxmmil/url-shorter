@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <% if (locals.id) { %>
+         <h1><%= id %></h1>
+        <% } %>
+        <h1>hwlo</h1>
+        <% recivedata.forEach(e => { %>
+        <li>
+            <a href="http://localhost:3000/api/v1/<%= e.shortid%> "><%= e.directurl %></a>
+        </li>
+        <% }) %>
+        <h1> <%= recivedata.shortid%></h1>
+        <span><a href="/api/v1/home">back</a></span>
+    </body>
+    </html>
+</body>
+</html>

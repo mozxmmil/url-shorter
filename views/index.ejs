@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+        class="w-full h-1/6 flex items-center justify-between px-6  bg-red-300 "
+      >
+        <div class="h-24 w-1/12 mix-blend-multiply bg-transparent">
+          <img class="w-full mix-blend-multiply h-full object-cover
+          bg-transparent"
+          src="https://th.bing.com/th/id/OIG.0KbJeucbKmqBsRWE.dg0?pid=ImgGn
+          alt="logoimg">
+        </div>
+        <div class="w-1/2 flex justify-around font-semibold text-2xl uppercase">
+          <a href="#">home</a>
+          <a href="#">contact</a>
+          <a href="#">about</a>
+          <a href="#">about</a>
+        </div>
+      </div>
+    <div
+      class="w-screen  h-screen bg-zinc-600   text-xl font-semibold flex items-center justify-center"
+    >
+     <div class="max-w-md min-h-80 rounded-md bg-pink-400   px-5  flex flex-col items-center  ">
+      <label for="url" class="px-2 py-2">please enter url</label>
+       <form " action="/api/v1/url" method="post">
+      <input class="my-4 " type="text" name="urlinput" id="url">
+      <button class="px-4 py-4 rounded-full bg-red-500 hover:bg-red-600">submit</button>
+    </form></div>
+    </div>
+  </body>
+</html>
